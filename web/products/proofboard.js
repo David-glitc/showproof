@@ -1,7 +1,7 @@
-import {$,config,state,esc,fmt,link,short,button,field,area,form,details,amount,read,tx,mine,start} from '../core.js';
+import {$,config,state,esc,fmt,link,short,button,field,area,form,details,amount,read,tx,mine,chainTime,start} from '../core.js';
 function controls(){
  $('list-title').textContent='Bounties';
- $('controls').innerHTML='<h2>Create a bounty</h2>'+form('new-bounty',field('title','What needs doing?','','text','maxlength="120"')+area('description','Details and acceptance criteria')+field('reward','Reward (BOT)','0.01','text','inputmode="decimal"')+field('days','Submission window (days)','7','number','min="1" max="90"'),'Fund bounty',async f=>tx('ProofBounty','create',[f.title,f.description,BigInt(Math.floor(Date.now()/1000)+Number(f.days)*86400)],amount(f.reward)))+'<p class="tiny">Funds stay in the contract until you award a claim or cancel under the bounty rules.</p>';
+ $('controls').innerHTML='<h2>Create a bounty</h2>'+form('new-bounty',field('title','What needs doing?','','text','maxlength="120"')+area('description','Details and acceptance criteria')+field('reward','Reward (BOT)','0.01','text','inputmode="decimal"')+field('days','Submission window (days)','7','number','min="1" max="90"'),'Fund bounty',async f=>tx('ProofBounty','create',[f.title,f.description,BigInt(await chainTime()+Number(f.days)*86400)],amount(f.reward)))+'<p class="tiny">Funds stay in the contract until you award a claim or cancel under the bounty rules.</p>';
  $('rules').innerHTML='<ul><li>The creator chooses the winner. There is no community vote.</li><li>Submit a public image or IPFS URL with your proof. Hosting is provided by your chosen image service.</li><li>With no claims, the creator can cancel. With claims, cancellation unlocks seven days after the deadline.</li><li>Winners withdraw their BOT after an award. No protocol fee.</li></ul>';
 }
 async function render(){

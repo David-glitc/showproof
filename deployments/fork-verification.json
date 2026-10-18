@@ -1,7 +1,7 @@
 {
   "localOnly": true,
   "chainId": 677,
-  "checkedAt": "2026-10-18T13:13:53.156Z",
+  "checkedAt": "2026-10-18T20:24:44.255Z",
   "proofboard": {
     "flow": "fund → cancel → withdraw"
   }
