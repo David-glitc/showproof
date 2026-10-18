@@ -3,7 +3,7 @@ pragma solidity ^0.8.24;
 import {ReentrancyGuard} from "@openzeppelin/contracts/utils/ReentrancyGuard.sol";
 
 /// @notice Independent POIDH-inspired solo bounties. Creator judges proof; rewards are native BOT.
-contract ProofBounty is ReentrancyGuard {
+contract ShowproofBounty is ReentrancyGuard {
     struct Bounty {address creator; uint256 reward; uint64 deadline; bool closed; string title; string description; uint256 winningClaim;}
     struct Claim {address creator; string proofURI; string description;}
     uint256 public bountyCount;

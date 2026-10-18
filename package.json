@@ -1,5 +1,5 @@
 {
-  "name": "proofboard",
+  "name": "showproof",
   "private": true,
   "type": "module",
   "scripts": {
@@ -23,6 +23,6 @@
   },
   "description": "BOT-funded tasks with public proof submissions and creator-selected payouts. Inspired by POIDH.",
   "license": "MIT",
-  "repository": "https://github.com/David-glitc/proofboard",
-  "homepage": "https://proofboard-botchain.davidopuene8.workers.dev"
+  "repository": "https://github.com/David-glitc/showproof",
+  "homepage": "https://showproof-botchain.davidopuene8.workers.dev"
 }

@@ -1,13 +1,13 @@
-# Proofboard
+# Showproof
 
 **Post a bounty. Show the proof.** BOT-funded tasks with public proof submissions and creator-selected payouts. Inspired by POIDH.
 
 **Status:** contracts are tested on a BOT Chain mainnet fork; the mainnet deployment is pending.
 
-- Website and app: https://proofboard-botchain.davidopuene8.workers.dev (app at [`/app/`](https://proofboard-botchain.davidopuene8.workers.dev/app/))
+- Website and app: https://showproof-botchain.davidopuene8.workers.dev (app at [`/app/`](https://showproof-botchain.davidopuene8.workers.dev/app/))
 - Network: BOT Chain mainnet, chain ID 677 · [BOT Chain](https://www.botchain.ai/) · [BOTScan](https://scan.botchain.ai/)
 
-![Proofboard landing page](docs/proofboard-landing-1280.png)
+![Showproof landing page](docs/showproof-landing-1280.png)
 
 ## How it works
 
@@ -26,7 +26,7 @@
 
 | Contract | BOT Chain mainnet |
 |---|---|
-| `ProofBounty` | Pending mainnet deployment |
+| `ShowproofBounty` | Pending mainnet deployment |
 
 BOT Chain infrastructure used: USDT `0xaBabc7Ddc03e501d190C676BF3d92ef0e6e87a3C`, WBOT `0xD5452816194a3784dBa983426cCe7c122F4abd30`, BDEX router `0x07032d47A1b9f8460cBeE9dC17c1d3E438693929`, BDEX QuoterV2 `0x034A705b36067cff99ABf5C662Be881cBd8d0176`.
 
@@ -37,15 +37,15 @@ Source: [`contracts/src`](contracts/src). Tests: [`contracts/test`](contracts/te
 Requires Node 20+, [Foundry](https://getfoundry.sh) and Python 3.
 
 ```bash
-git clone --recursive https://github.com/David-glitc/proofboard.git
-cd proofboard
+git clone --recursive https://github.com/David-glitc/showproof.git
+cd showproof
 npm ci
 npm test              # forge test
-npm run build         # landing page + app into dist/proofboard
+npm run build         # landing page + app into dist/showproof
 npm run preview       # http://127.0.0.1:8771
 ```
 
-`npm run build` writes `dist/proofboard/index.html` (landing page), `dist/proofboard/app/` (the dApp) and a Cloudflare Workers bundle under `sites/`.
+`npm run build` writes `dist/showproof/index.html` (landing page), `dist/showproof/app/` (the dApp) and a Cloudflare Workers bundle under `sites/`.
 
 ### Wallets
 

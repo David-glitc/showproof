@@ -1,2 +1,2 @@
-import proofboard from './proofboard.mjs';
-export default [proofboard];
+import showproof from './showproof.mjs';
+export default [showproof];
