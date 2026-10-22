@@ -1,0 +1,42 @@
+{
+  "chainId": 677,
+  "network": "mainnet",
+  "deployer": "0x766d0d810eCF822e02df47CDb5A389777f291895",
+  "local": false,
+  "contracts": {
+    "ShowproofBounty": "0xde89a711cc8905e96661b30683fce1bf7235343a"
+  },
+  "actions": {
+    "deploy:ShowproofBounty": {
+      "hash": "0xc298c2c8cec9c650bb6dd67a590a10ea2a8746ebc0d47bcf867a659fe9d3c54e",
+      "receipt": {
+        "transactionHash": "0xc298c2c8cec9c650bb6dd67a590a10ea2a8746ebc0d47bcf867a659fe9d3c54e",
+        "contractAddress": "0xde89a711cc8905e96661b30683fce1bf7235343a",
+        "blockNumber": "27571962",
+        "gasUsed": "1025004",
+        "gasPrice": "20000000000"
+      }
+    }
+  },
+  "gasSpentWei": "284775900000000000",
+  "ready": true,
+  "infrastructure": {
+    "USDT": "0xaBabc7Ddc03e501d190C676BF3d92ef0e6e87a3C",
+    "WBOT": "0xD5452816194a3784dBa983426cCe7c122F4abd30",
+    "router": "0x07032d47A1b9f8460cBeE9dC17c1d3E438693929",
+    "quoter": "0x034A705b36067cff99ABf5C662Be881cBd8d0176",
+    "fee": 3000
+  },
+  "launched": {
+    "showproof": "2026-10-22T10:03:19.252Z"
+  },
+  "sourceHashes": {
+    "ShowproofBounty": "0x48f406250cdbbf6410ee9a33653e387f56b1d182ffa4397d10ca829aa077c7a7"
+  },
+  "records": {
+    "hedgerowReferenceBasket": {
+      "vault": "0x94B8d2f320b4E96Fb3FA5c040E8F272B18fC31A9",
+      "tx": "0x2c24e6e1a4f01297f0ea0106be58b14c75698f0625fd45597887c83316707e21"
+    }
+  }
+}
