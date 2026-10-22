@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Figtree:wght@400;500;600;700&family=DM+Mono:wght@500&display=swap');
+/* Showproof: snapshots pinned to a board in daylight. Warm white, coral and cobalt, rounded polaroid cards. */
+:root{--scheme:light;--bg:#FBF8F3;--surface:#FFFFFF;--surface-2:#F3EEE6;--input-bg:#FFFFFF;--tile:#F3EEE6;
+ --ink:#17151C;--ink-2:#57525F;--line:#E4DED4;--line-strong:#8A8379;
+ --accent:#C0371E;--accent-hover:#A32D17;--accent-ink:#FFFFFF;--accent-text:#B0321B;--link:#1F3FCC;--focus:#1F3FCC;
+ --danger:#B3261E;--danger-bg:#FCE8E5;--danger-text:#9C1F17;--scrim:rgba(23,21,28,.45);
+ --radius-sm:10px;--radius-md:16px;--radius-lg:22px;--radius-btn:999px;--radius-pill:999px;--border-w:1.5px;
+ --shadow-1:0 10px 30px rgba(23,21,28,.07);--shadow-2:0 24px 60px rgba(23,21,28,.18);--shadow-btn:0 3px 0 rgba(23,21,28,.85);
+ --font-display:'Bricolage Grotesque',system-ui,sans-serif;--font-body:'Figtree',system-ui,sans-serif;--font-label:'Figtree',system-ui,sans-serif;--font-mono:'DM Mono',ui-monospace,monospace;
+ --display-weight:800;--display-tracking:-0.035em;--display-case:none;--label-tracking:.12em}
+/* Art leads on the left; steps are polaroids with tape; features carry check discs. */
+@media(min-width:861px){.hero{grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);grid-template-areas:"art copy"}}
+button,a.button{border-color:var(--ink)}
+.steps li{padding:22px 22px 30px;border:1.5px solid var(--ink);box-shadow:0 6px 0 var(--ink);position:relative}
+.steps li:nth-child(1){transform:rotate(-1.2deg)}.steps li:nth-child(3){transform:rotate(1.2deg)}
+.steps li:after{content:'';position:absolute;top:-10px;left:50%;width:70px;height:20px;margin-left:-35px;background:#F3D9A4;opacity:.9;transform:rotate(-3deg)}
+.steps li:before{color:var(--accent-text)}
+.features div{border-left:0;padding-left:44px;position:relative}
+.features div:before{content:'';position:absolute;left:0;top:4px;width:28px;height:28px;border-radius:50%;background:var(--accent) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M6 12.5 10 16.5 18 8' fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/18px no-repeat}
+.launch{border-color:var(--ink);border-radius:var(--radius-lg)}
+.panel{border-color:var(--ink)}
+.cta-band{background:var(--ink);border-color:var(--ink)}
+.cta-band h2,.cta-band p{color:#FBF8F3}
+@media(prefers-reduced-motion:reduce){.steps li{transform:none!important}}
