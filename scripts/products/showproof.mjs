@@ -2,6 +2,7 @@ import {parseEther} from 'viem';
 export default {
  slug:'showproof',vercel:'showproofbot',assets:['BOT'],name:'Showproof',repo:'showproof',contract:'ShowproofBounty',color:'#b7d9ff',eyebrow:'PROOF BOUNTIES',symbol:'✓',
  line:'Post a bounty. Show the proof.',
+ app:{title:'Bounty wall',line:'Fund a task, post your proof, get paid by the creator.',layout:'wall'},
  description:'BOT-funded tasks with public proof submissions and creator-selected payouts. Inspired by POIDH.',
  abis:['ShowproofBounty'],
  contracts:['src/ShowproofBounty.sol'],tests:['test/Showproof.t.sol'],
