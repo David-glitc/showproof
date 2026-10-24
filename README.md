@@ -6,6 +6,7 @@
 
 - Website and app: https://showproofbot.vercel.app (app at [`/app/`](https://showproofbot.vercel.app/app/))
 - Network: BOT Chain mainnet, chain ID 677 · [BOT Chain](https://www.botchain.ai/) · [BOTScan](https://scan.botchain.ai/)
+- X: [@Showproof_fi](https://x.com/Showproof_fi)
 
 ![Showproof landing page](docs/showproof-landing-1280.png)
 
